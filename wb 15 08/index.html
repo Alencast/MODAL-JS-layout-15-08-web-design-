@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="layout.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="modal">
+        <button id="fechar" onclick="fechar()">(X) FECHAR</button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+    </div>
+
+    <div class="box box1">teste</div>
+    <div class="box box2">teste</div>
+    <header>
+        <h1>WTADS</h1>
+    </header>
+
+    <main>
+        <button id="showmodal">MOSTRAR MODAL</button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Maxime</p>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por IFRN</p>
+    </footer>
+
+    <script>
+        document.getElementById("showmodal").addEventListener("click", modal);
+        document.getElementById("fechar").addEventListener("click", modal);
+        
+        
+
+        function modal(){
+
+            if(window.getComputedStyle(document.querySelector("#modal")).visibility == "visible")
+            document.getElementById("modal").style.visibility ="hidden";  
+            else
+            document.getElementById("modal").style.visibility = "visible";
+           
+            // elementos do document object model para adicionar a função de abrir ou fechar o modal ao clicar
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>
